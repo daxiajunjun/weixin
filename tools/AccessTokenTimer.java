@@ -16,8 +16,8 @@ public class AccessTokenTimer extends TimerTask{
 	@Override
 	public void run() {
 		
-		String  appId= "wxd6e51ca436bd6907";
-		String 	appSecret= "f11bd9418290dfeb5e88ee75c8b69b6b";
+		String  appId= "";
+		String 	appSecret= "";
 		
 		AccessToken accessToken = WeiXinUtil.getAccessToken(appId, appSecret);
 		atDao.addAccessToken(accessToken);
